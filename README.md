@@ -1,14 +1,16 @@
+URL PUBLISH :
+https://marketplace.visualstudio.com/manage
+
+
+
+
 Comandos :
 
 -> Compilar : 
 tsc
 -> Asignar Variables para test : 
 
-$env:INPUT_UrlChecked=''
-$env:INPUT_ApiToken=''
-$env:INPUT_Nombre=''
-$env:INPUT_IdStatusPage=''
-
+$env:samplestring=''
 
 -> Ejecutar : 
 
