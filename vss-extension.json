@@ -1,0 +1,36 @@
+{
+  "manifestVersion": 1,
+  "id": "build-cc-testo-task",
+  "name": "test task",
+  "version": "0.0.1",
+  "publisher": "CustomerCare",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Publish StatusPage y Monitoring",
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "icons": {
+    "default": "images/favicon_2.ico"
+  },
+  "files": [
+    {
+      "path": "buildAndReleaseTask"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "custom-build-release-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "buildAndReleaseTask"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "dda7dbf0-3f13-4ce5-be4d-ffc1292afe9d",
+  "name": "customercare",
+  "friendlyName": "cc-testo",
+  "description": "Publicacion de Api Customer Care Pipeline a BetterUptime",
+  "helpMarkDown": "",
+  "category": "Utility",
+  "author": "Diego Ruiz",
+  "version": {
+    "Major": 0,
+    "Minor": 0,
+    "Patch": 1
+  },
+  "instanceNameFormat": "Echo $(samplestring)",
+  "inputs": [
+    {
+      "name": "samplestring",
+      "type": "string",
+      "label": "samplestring",
+      "defaultValue": "",
+      "helpMarkDown": "String de ejemplo"
+    }
+  ],
+  "execution": {
+    "Node10": {
+      "target": "index.js"
+    }
+  }
+}
